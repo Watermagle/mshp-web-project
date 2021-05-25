@@ -1,6 +1,15 @@
 /* Mobile */
+* {
+    font-family: "Roboto";
+}
+
 body {
     margin: 0
+}
+
+.navbar-link-text {
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -19,6 +28,24 @@ header {
     border-style: solid;
     height: 35px;
     align-items: center;
+}
+
+li {
+    margin: 10px auto;
+}
+
+.article-navlist {
+    margin: 0;
+    padding-left: 25px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.article-navlist-visible {
+    height: 68px;
+    border-bottom: 2px black solid;
+    transition: 0.5s;
 }
 
 .mobile-header-title {
@@ -86,24 +113,121 @@ header {
     transition: 0.25s;
 }
 
+.main-area {
+    width: auto;
+    background-color: white;
+}
+
+.background {
+    background-color: gray;
+}
+
+footer {
+    padding: 0;
+    border: 2px black solid;
+    background-color: rgb(235, 235, 235);
+}
+
+.footer-text {
+    font-family: "Roboto";
+    font-size: 1rem;
+    margin: 5px;
+    padding: 0;
+}
+
+.navbar-logo {
+    display: none;
+}
+
+main {
+    padding: 15px;
+}
+
+.page-header {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.page-text {
+    padding: 0;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.page-subheader {
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.article-navigation {
+    border: 2px black solid;
+    border-bottom: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-navigation-header {
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    flex: 10;
+}
+
+.article-navigation-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px black solid;
+}
+
+.invisible-article-button {
+    display: none;
+}
+
+.visible-article-button {
+    display: inline;
+}
+
+.article-navigation-toggle {
+    text-align: right;
+    padding-right: 15px;
+    flex: 1;
+}
+
 /* Tablets */
 @media (min-width: 768px) {
-    header {
-        position: static;
+    .article-navigation {
+        width: 256px;
     }
+    .navbar-logo {
+        display: block;
+        padding: 5px;
+        border-right: black 2px solid;
+        height: 50px;
+    }
+
     .mobile-header {
         display: none;
     }
 
     .nav-menu {
-        height: auto;
+        height: 50px;
         flex-direction: row;
+        align-items: center;
         border: 2px black solid;
     }
 
     .navbar-link {
         border-left: none;
         border-bottom: none;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .navbar-link:hover {
@@ -119,5 +243,12 @@ header {
 
 /* Desktop */
 @media (min-width: 1024px) {
-
+    .main-area {
+        margin: 0 auto;
+        width: 1024px;
+        background-color: white;
+    }
+    .background {
+        background-color: gray;
+    }
 }

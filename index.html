@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,33 +10,77 @@
         <title>MSHP Web Project</title>
     </head>
     <body>
-        <div class="main-area">
-            <header>
-                <div class="mobile-header">
-                    <h1 class="mobile-header-title">MSHP Web Project</h1>
-                    <div class="open-navbar-button" id="navbar-button" onclick="toggleNavMenu();">
-                        <div class="open-navbar-button-line"></div>
-                        <div class="open-navbar-button-line"></div>
-                        <div class="open-navbar-button-line"></div>
+        <div class="background">
+            <div class="main-area">
+                <header>
+                    <div class="mobile-header">
+                        <h1 class="mobile-header-title">MSHP Web Project</h1>
+                        <a href="javascript:void(0)" class="open-navbar-button" id="navbar-button" onclick="toggleNavMenu();">
+                            <div class="open-navbar-button-line"></div>
+                            <div class="open-navbar-button-line"></div>
+                            <div class="open-navbar-button-line"></div>
+                        </a>
                     </div>
-                </div>
-                <nav class="nav-menu" id="nav-menu">
-                    <a href="#" class="navbar-link">Link 1</a>
-                    <a href="#" class="navbar-link">Link 2</a>
-                    <a href="#" class="navbar-link">Link 3</a>
-                </nav>
-            </header>
-            <main>
-                <h2>Контент для проверки sticky</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum ex feugiat ullamcorper mattis. Cras fringilla semper tincidunt. Aenean sit amet lorem in ligula bibendum ultricies. Cras convallis ex eu sagittis efficitur. Curabitur eu quam lacus. Phasellus non hendrerit lacus. Nullam ornare congue elit, sit amet scelerisque tellus pellentesque id.
+                    <nav class="nav-menu" id="nav-menu">
+                        <img src="img/logo.png" alt="[Логотип сайта]" class="navbar-logo">
+                        <a href="#" class="navbar-link"><p class="navbar-link-text">Ссылка 1</p></a>
+                        <a href="#" class="navbar-link"><p class="navbar-link-text">Ссылка 2</p></a>
+                        <a href="#" class="navbar-link"><p class="navbar-link-text">Ссылка 3</p></a>
+                    </nav>
+                </header>
+                <main>
+                    <h1 class="page-header" id="page-header">Главная</h1>
+                    <div class="article-navigation">
+                        <div class="article-navigation-control">
+                            <h3 class="article-navigation-header">Содержание</h3>
+                            <div class="article-navigation-toggle">
+                                <a href="javascript:void(0)" id="article-button1" onclick="toggleArticleMenu();" class="invisible-article-button">Свернуть</a>
+                                <a href="javascript:void(0)" id="article-button2" onclick="toggleArticleMenu();" class="invisible-article-button visible-article-button">Развернуть</a>
+                            </div>
+                        </div>
+                        <ol class="article-navlist" id="article-navlist">
+                            <li><a href="#anchor1">Арбуз</a></li>
+                            <li><a href="#anchor1">Карапуз</a></li>
+                        </ol>
+                    </div>
+                    <span id="anchor1"></span>
+                    <h2 class="page-subheader">Подзаголовок 1</h2>
+                    <p class="page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum ex feugiat ullamcorper mattis. Cras fringilla semper tincidunt. Aenean sit amet lorem in ligula bibendum ultricies. Cras convallis ex eu sagittis efficitur. Curabitur eu quam lacus. Phasellus non hendrerit lacus. Nullam ornare congue elit, sit amet scelerisque tellus pellentesque id.
 
-                    Phasellus id tempor ligula. Ut interdum sollicitudin viverra. Maecenas non eleifend augue. Nullam accumsan pharetra neque, ut fringilla metus fringilla quis. Curabitur pellentesque congue enim, id vulputate massa blandit eget. Sed tincidunt risus at ipsum maximus posuere. Aenean ac erat porttitor, dictum libero ut, luctus lorem. Proin tempus tempus nibh aliquam congue. Nunc maximus tristique convallis. Nullam turpis ex, laoreet ac venenatis in, pretium et nisl. Sed posuere sapien sit amet eros dapibus suscipit. Maecenas ut felis at nulla sollicitudin posuere eu in sem. Praesent risus leo, lobortis eget euismod vitae, tincidunt eget eros. Praesent nec viverra mauris.
-                    
-                    Integer vehicula placerat mauris, at egestas metus egestas ut. Nulla efficitur, libero ac hendrerit mattis, turpis elit ornare massa, id tincidunt velit felis in augue. Etiam ex risus, iaculis ut erat vitae, ultrices ornare augue. Cras eget pulvinar est. Aenean auctor consequat est, venenatis semper ligula laoreet ac. Cras ipsum lorem, tempor sed lorem in, eleifend vulputate dui. Praesent condimentum luctus nisl, eget vehicula turpis accumsan tristique. Quisque iaculis placerat leo, eu mattis justo fringilla nec. Nunc leo turpis, blandit ac libero vel, sodales blandit velit. Quisque vehicula luctus porta. Fusce placerat elit ligula, nec tincidunt tortor facilisis ut. Fusce euismod non neque ut posuere. Praesent at lorem pretium, aliquam justo quis, egestas velit. Ut eu orci et tellus faucibus faucibus. Nam luctus nulla non suscipit tempus. Vestibulum ullamcorper cursus ipsum at sagittis.</p>
-            </main>
-            <footer>
+                        Phasellus id tempor ligula. Ut interdum sollicitudin viverra. Maecenas non eleifend augue. Nullam accumsan pharetra neque, ut fringilla metus fringilla quis. Curabitur pellentesque congue enim, id vulputate massa blandit eget. Sed tincidunt risus at ipsum maximus posuere. Aenean ac erat porttitor, dictum libero ut, luctus lorem. Proin tempus tempus nibh aliquam congue. Nunc maximus tristique convallis. Nullam turpis ex, laoreet ac venenatis in, pretium et nisl. Sed posuere sapien sit amet eros dapibus suscipit. Maecenas ut felis at nulla sollicitudin posuere eu in sem. Praesent risus leo, lobortis eget euismod vitae, tincidunt eget eros. Praesent nec viverra mauris.
+                        
+                        Integer vehicula placerat mauris, at egestas metus egestas ut. Nulla efficitur, libero ac hendrerit mattis, turpis elit ornare massa, id tincidunt velit felis in augue. Etiam ex risus, iaculis ut erat vitae, ultrices ornare augue. Cras eget pulvinar est. Aenean auctor consequat est, venenatis semper ligula laoreet ac. Cras ipsum lorem, tempor sed lorem in, eleifend vulputate dui. Praesent condimentum luctus nisl, eget vehicula turpis accumsan tristique. Quisque iaculis placerat leo, eu mattis justo fringilla nec. Nunc leo turpis, blandit ac libero vel, sodales blandit velit. Quisque vehicula luctus porta. Fusce placerat elit ligula, nec tincidunt tortor facilisis ut. Fusce euismod non neque ut posuere. Praesent at lorem pretium, aliquam justo quis, egestas velit. Ut eu orci et tellus faucibus faucibus. Nam luctus nulla non suscipit tempus. Vestibulum ullamcorper cursus ipsum at sagittis.
+                    </p>
+                    <p class="page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum ex feugiat ullamcorper mattis. Cras fringilla semper tincidunt. Aenean sit amet lorem in ligula bibendum ultricies. Cras convallis ex eu sagittis efficitur. Curabitur eu quam lacus. Phasellus non hendrerit lacus. Nullam ornare congue elit, sit amet scelerisque tellus pellentesque id.
 
-            </footer>
+                        Phasellus id tempor ligula. Ut interdum sollicitudin viverra. Maecenas non eleifend augue. Nullam accumsan pharetra neque, ut fringilla metus fringilla quis. Curabitur pellentesque congue enim, id vulputate massa blandit eget. Sed tincidunt risus at ipsum maximus posuere. Aenean ac erat porttitor, dictum libero ut, luctus lorem. Proin tempus tempus nibh aliquam congue. Nunc maximus tristique convallis. Nullam turpis ex, laoreet ac venenatis in, pretium et nisl. Sed posuere sapien sit amet eros dapibus suscipit. Maecenas ut felis at nulla sollicitudin posuere eu in sem. Praesent risus leo, lobortis eget euismod vitae, tincidunt eget eros. Praesent nec viverra mauris.
+                        
+                        Integer vehicula placerat mauris, at egestas metus egestas ut. Nulla efficitur, libero ac hendrerit mattis, turpis elit ornare massa, id tincidunt velit felis in augue. Etiam ex risus, iaculis ut erat vitae, ultrices ornare augue. Cras eget pulvinar est. Aenean auctor consequat est, venenatis semper ligula laoreet ac. Cras ipsum lorem, tempor sed lorem in, eleifend vulputate dui. Praesent condimentum luctus nisl, eget vehicula turpis accumsan tristique. Quisque iaculis placerat leo, eu mattis justo fringilla nec. Nunc leo turpis, blandit ac libero vel, sodales blandit velit. Quisque vehicula luctus porta. Fusce placerat elit ligula, nec tincidunt tortor facilisis ut. Fusce euismod non neque ut posuere. Praesent at lorem pretium, aliquam justo quis, egestas velit. Ut eu orci et tellus faucibus faucibus. Nam luctus nulla non suscipit tempus. Vestibulum ullamcorper cursus ipsum at sagittis.
+                    </p>
+                    <span id="anchor2"></span>
+                    <h2 class="page-subheader">Подзаголовок 2</h2>
+                    <p class="page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum ex feugiat ullamcorper mattis. Cras fringilla semper tincidunt. Aenean sit amet lorem in ligula bibendum ultricies. Cras convallis ex eu sagittis efficitur. Curabitur eu quam lacus. Phasellus non hendrerit lacus. Nullam ornare congue elit, sit amet scelerisque tellus pellentesque id.
+
+                        Phasellus id tempor ligula. Ut interdum sollicitudin viverra. Maecenas non eleifend augue. Nullam accumsan pharetra neque, ut fringilla metus fringilla quis. Curabitur pellentesque congue enim, id vulputate massa blandit eget. Sed tincidunt risus at ipsum maximus posuere. Aenean ac erat porttitor, dictum libero ut, luctus lorem. Proin tempus tempus nibh aliquam congue. Nunc maximus tristique convallis. Nullam turpis ex, laoreet ac venenatis in, pretium et nisl. Sed posuere sapien sit amet eros dapibus suscipit. Maecenas ut felis at nulla sollicitudin posuere eu in sem. Praesent risus leo, lobortis eget euismod vitae, tincidunt eget eros. Praesent nec viverra mauris.
+                        
+                        Integer vehicula placerat mauris, at egestas metus egestas ut. Nulla efficitur, libero ac hendrerit mattis, turpis elit ornare massa, id tincidunt velit felis in augue. Etiam ex risus, iaculis ut erat vitae, ultrices ornare augue. Cras eget pulvinar est. Aenean auctor consequat est, venenatis semper ligula laoreet ac. Cras ipsum lorem, tempor sed lorem in, eleifend vulputate dui. Praesent condimentum luctus nisl, eget vehicula turpis accumsan tristique. Quisque iaculis placerat leo, eu mattis justo fringilla nec. Nunc leo turpis, blandit ac libero vel, sodales blandit velit. Quisque vehicula luctus porta. Fusce placerat elit ligula, nec tincidunt tortor facilisis ut. Fusce euismod non neque ut posuere. Praesent at lorem pretium, aliquam justo quis, egestas velit. Ut eu orci et tellus faucibus faucibus. Nam luctus nulla non suscipit tempus. Vestibulum ullamcorper cursus ipsum at sagittis.
+                    </p>
+                    <p class="page-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum ex feugiat ullamcorper mattis. Cras fringilla semper tincidunt. Aenean sit amet lorem in ligula bibendum ultricies. Cras convallis ex eu sagittis efficitur. Curabitur eu quam lacus. Phasellus non hendrerit lacus. Nullam ornare congue elit, sit amet scelerisque tellus pellentesque id.
+
+                        Phasellus id tempor ligula. Ut interdum sollicitudin viverra. Maecenas non eleifend augue. Nullam accumsan pharetra neque, ut fringilla metus fringilla quis. Curabitur pellentesque congue enim, id vulputate massa blandit eget. Sed tincidunt risus at ipsum maximus posuere. Aenean ac erat porttitor, dictum libero ut, luctus lorem. Proin tempus tempus nibh aliquam congue. Nunc maximus tristique convallis. Nullam turpis ex, laoreet ac venenatis in, pretium et nisl. Sed posuere sapien sit amet eros dapibus suscipit. Maecenas ut felis at nulla sollicitudin posuere eu in sem. Praesent risus leo, lobortis eget euismod vitae, tincidunt eget eros. Praesent nec viverra mauris.
+                        
+                        Integer vehicula placerat mauris, at egestas metus egestas ut. Nulla efficitur, libero ac hendrerit mattis, turpis elit ornare massa, id tincidunt velit felis in augue. Etiam ex risus, iaculis ut erat vitae, ultrices ornare augue. Cras eget pulvinar est. Aenean auctor consequat est, venenatis semper ligula laoreet ac. Cras ipsum lorem, tempor sed lorem in, eleifend vulputate dui. Praesent condimentum luctus nisl, eget vehicula turpis accumsan tristique. Quisque iaculis placerat leo, eu mattis justo fringilla nec. Nunc leo turpis, blandit ac libero vel, sodales blandit velit. Quisque vehicula luctus porta. Fusce placerat elit ligula, nec tincidunt tortor facilisis ut. Fusce euismod non neque ut posuere. Praesent at lorem pretium, aliquam justo quis, egestas velit. Ut eu orci et tellus faucibus faucibus. Nam luctus nulla non suscipit tempus. Vestibulum ullamcorper cursus ipsum at sagittis.
+                    </p>
+                </main>
+                <footer>
+                    <p class="footer-text">Сайт написан в качестве итогового проекта по курсу «Web-разработка»</p>
+                    <p class="footer-text">Тимченко Савелий (Watermagle), 2021</p>
+                </footer>
+            </div>
         </div>
     </body>
 </html>
