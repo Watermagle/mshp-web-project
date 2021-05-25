@@ -1,14 +1,18 @@
-/* Tablets in portrait mode and most mobile devices */
-@media (min-width: 768px) {
-
+.mobile-menu {
+    display: flex;
 }
 
-/* Tablets and some mobile devices in landscape mode */
-@media (min-width: 1024px) {
-
+.desktop-menu {
+    display: none;
 }
 
 /* Desktop */
-@media (min-width: 1366px) {
+@media (min-width: 1024px) {
+    .mobile-menu {
+        display: none;
+    }
 
+    .desktop-menu {
+        display: flex;
+    }
 }
