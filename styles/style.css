@@ -1,0 +1,14 @@
+/* Tablets in portrait mode and most mobile devices */
+@media (min-width: 768px) {
+
+}
+
+/* Tablets and some mobile devices in landscape mode */
+@media (min-width: 1024px) {
+
+}
+
+/* Desktop */
+@media (min-width: 1366px) {
+
+}
