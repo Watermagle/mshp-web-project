@@ -3,6 +3,22 @@
     font-family: "Roboto";
 }
 
+h1 {
+    font-family: "Montserrat";
+}
+
+h2 {
+    font-family: "Montserrat";
+}
+
+h3 {
+    font-family: "Montserrat";
+}
+
+p {
+    font-family: "Roboto";
+}
+
 body {
     margin: 0
 }
@@ -53,7 +69,7 @@ li {
     padding-left: 6px;
     font-size: 1.6rem;
     flex: 5;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-weight: normal;
     white-space: nowrap;
 }
