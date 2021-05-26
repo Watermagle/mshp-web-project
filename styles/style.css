@@ -198,11 +198,72 @@ main {
     flex: 1;
 }
 
+.article-img {
+    padding: 0;
+    width: 350px;
+    margin: 0;
+}
+
+.article-media-container-right {
+    padding: 0;
+}
+
+.article-media-container-left {
+    padding: 0;
+    margin-top: 15px;
+}
+
+.text-media-block-right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.text-media-block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive-iframe {
+    width: 350px;
+    height: 196px;
+}
+
 /* Tablets */
 @media (min-width: 768px) {
+    .responsive-iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    .text-media-block-right {
+        display: block;
+    }
+
+    .text-media-block-left {
+        display: block;
+    }
+
+    .article-media-container-right {
+        margin-left: 10px;
+        float: right;
+    }
+
+    .article-media-container-left {
+        margin-right: 10px;
+        margin-top: 0;
+        float: left;
+    }
+    
     .article-navigation {
         width: 256px;
     }
+
+    .article-img {
+        width: auto;
+    }
+
     .navbar-logo {
         display: block;
         padding: 5px;
