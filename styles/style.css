@@ -251,6 +251,7 @@ main {
 .responsive-iframe {
     width: 350px;
     height: 196px;
+    border: none;
 }
 
 /* Tablets */
