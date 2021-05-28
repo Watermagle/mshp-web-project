@@ -36,6 +36,10 @@ header {
     background-color: white;
 }
 
+.decorated-text {
+    text-decoration: line-through;
+}
+
 .mobile-header {
     display: flex;
     flex-direction: row;
@@ -292,7 +296,7 @@ main {
     }
     
     .article-navigation {
-        width: 256px;
+        width: 340px;
     }
 
     .article-img {
@@ -340,6 +344,10 @@ main {
 
     .caroline-block {
         height: 380px;
+    }
+
+    .glados-block {
+        height: 240px;
     }
 }
 

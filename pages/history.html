@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+        <script src="../scripts/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+        <title>Aperture - История</title>
+    </head>
+    <body>
+        <div class="background">
+            <div class="main-area">
+                <header>
+                    <div class="mobile-header">
+                        <div class="mobile-header-title-logo">
+                            <img src="../img/mobile-logo.png" class="mobile-logo" alt="[Mobile logo]">
+                            <h1 class="mobile-header-title">Aperture Laboratories</h1>
+                        </div>
+                        <a href="javascript:void(0)" class="open-navbar-button" id="navbar-button" onclick="toggleNavMenu();">
+                            <div class="open-navbar-button-line"></div>
+                            <div class="open-navbar-button-line"></div>
+                            <div class="open-navbar-button-line"></div>
+                        </a>
+                    </div>
+                    <nav class="nav-menu" id="nav-menu">
+                        <div class="navbar-logo-container">
+                            <img src="../img/logo.png" alt="[Логотип сайта]" class="navbar-logo">
+                        </div>
+                        <a href="../index.html" class="navbar-link"><p class="navbar-link-text">Главная</p></a>
+                        <a href="history.html" class="navbar-link"><p class="navbar-link-text">История компании</p></a>
+                        <a href="tech.html" class="navbar-link"><p class="navbar-link-text">Наши технологии</p></a>
+                        <a href="https://clck.ru/3vyXS" class="navbar-link"><p class="navbar-link-text">Сотрудничество с Black Mesa</p></a>
+                        <a href="contacts.html" class="navbar-link"><p class="navbar-link-text">Контакты</p></a>
+                    </nav>
+                </header>
+                <main>
+                    <h1 class="about-page-header" id="page-header">История компании</h1>
+                    <div class="article-navigation">
+                        <div class="article-navigation-control">
+                            <h3 class="article-navigation-header">Содержание</h3>
+                            <div class="article-navigation-toggle">
+                                <a href="javascript:void(0)" id="article-button1" onclick="toggleArticleMenu();" class="invisible-article-button">Свернуть</a>
+                                <a href="javascript:void(0)" id="article-button2" onclick="toggleArticleMenu();" class="invisible-article-button visible-article-button">Развернуть</a>
+                            </div>
+                        </div>
+                        <ol class="article-navlist" id="article-navlist">
+                            <li><a href="#anchor1">Ранние годы Aperture Science</a></li>
+                            <li><a href="#anchor2">Aperture после гибели Кейва Джонсона</a></li>
+                        </ol>
+                    </div>
+                    <span id="anchor1"></span>
+                    <h2 class="about-page-subheader">Ранние годы Aperture Science</h2>
+                    <div class="text-media-block-right">
+                        <div class="article-media-container-right">
+                            <img src="../img/cave-johnson.jpg" width="198px">
+                        </div>
+                        <p class="page-text">
+                            В 1943 году Кейв Джонсон основал компанию Aperture Fixtures для изготовления "самых гигеничных занавесок для душа".
+                            Вскоре, разбогатев на продаже занавесок для душа и получив несколько государственных заказов (преимущественно от президента США, Дуайта Эйзенхауэра), Джонсон переименовывает компанию в Aperture Science Innovators
+                            и выкупает заброшенную соляную шахту в Северном Мичигане, чтобы построить там научно-исследовательский комплекс, ныне известный, как "Центр обогащения Aperture Science".
+                        </p>
+                    </div>
+                    <div class="text-media-block-left">
+                        <div class="article-media-container-left">
+                            <img src="../img/aperture-fixtures.jpg" width="210px">
+                        </div>
+                        <p class="page-text">
+                            Начались ранние разработки портальной пушки под названием "Портативное устройство квантового туннелирования Aperture Science" (следует заметить, что в отличие от разработок Black Mesa, наши портальные устройства никогда не использовали для перемещения промежуточного измерения).
+                            Также, были разработаны отталкивающий и проталкивающий гели, первоначально продвигавшиеся как продукт для диетического питания. В процессе экспериментов с преобразующим гелем выясняется, что его пары являются смертельно опасным химикатом. Вскоре после этого, Кейв Джонсон умирает
+                            от последствий отравления парами преобразующего геля и оставляет в директорском кресле свою помощницу Кэролайн, нашего текущего директора.
+                        </p>
+                    </div>
+                    <span id="anchor2"></span>
+                    <div class="text-media-block-right glados-block">
+                        <div class="article-media-container-right">
+                            <img src="../img/glados.jpg" width="200px">
+                        </div>
+                        <div>
+                            <h2 class="about-page-subheader">Aperture после гибели Кейва Джонсона</h2>
+                            <p class="page-text">
+                                В настоящее время по предсмертной инициативе Кейва Джонсона, была возобновлена программа исследования природы порталов, а также начата разработка первого искусственного интеллекта, ГЛаДОС, который во многом поможет нам автоматизировать процесс управления лабораторным комплексом.
+                            </p>
+                            <p class="page-text decorated-text">
+                                К сожалению, текущая версия ГЛаДОС нестабильна и становится агрессивной через 1/16 пикосекунды после включения. (ИСПРАВИТЬ)
+                            </p>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <p class="footer-text">Сайт написан в качестве итогового проекта по курсу «Web-разработка»</p>
+                    <p class="footer-text">Тимченко Савелий (Watermagle), 2021</p>
+                    <p class="footer-text">This website uses official Valve content, any content from valve is a Trademark from Valve LLC, this includes any material from Portal, Portal 2, and other Valve titles.</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
