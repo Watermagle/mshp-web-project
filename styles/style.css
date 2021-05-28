@@ -325,7 +325,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 16.64px;
+        padding: 10.8px;
     }
 
     .navbar-link:hover {
@@ -336,6 +336,10 @@ main {
     .navbar-link:active {
         background-color: rgb(165, 165, 165);
         transition: 0.25s;
+    }
+
+    .caroline-block {
+        height: 380px;
     }
 }
 
