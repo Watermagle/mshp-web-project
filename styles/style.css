@@ -288,12 +288,45 @@ main {
     margin-bottom: 25px;
 }
 
+.address-row {
+    display: flex;
+}
+
+.address-column {
+    flex: 1;
+}
+
+.address-text {
+    font-size: 1rem;
+    padding: 0;
+    margin: 5px;
+}
+
+.responsive-map {
+    width: 350px;
+    height: 350px;
+    border: none;
+}
+
+.map-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* Tablets */
 @media (min-width: 768px) {
     .video-row {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    .responsive-map {
+        width: 730px;
+        height: 600px;
+        border: none;
+    }
+
     .responsive-iframe {
         width: 560px;
         height: 315px;
@@ -381,7 +414,14 @@ main {
         width: 1024px;
         background-color: white;
     }
+
     .background {
         background-image: url("../img/background.jpg");
+    }
+
+    .responsive-map {
+        width: 995px;
+        height: 600px;
+        border: none;
     }
 }
